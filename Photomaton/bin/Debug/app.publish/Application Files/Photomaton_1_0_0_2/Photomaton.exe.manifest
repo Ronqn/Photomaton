@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Photomaton.exe" version="1.0.0.2" publicKeyToken="05a81b33d57a2617" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Photomaton" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Photomaton.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Options de manifeste UAC
+          Pour changer le niveau du contrôle de compte d'utilisateur Windows, remplacez le
+          nœud requestedExecutionLevel par l'une des propositions suivantes.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Pour utiliser la virtualisation des fichiers et du Registre afin d'assurer
+         une compatibilité ascendante, supprimez le nœud requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AForge.dll" size="17920">
+      <assemblyIdentity name="AForge" version="2.2.5.0" publicKeyToken="C1DB6FF4EAA06AEB" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>lmpHQGCorKcMc7oJ0Lb+I1MDWWHHEHuQA++HnAEP+No=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AForge.Video.dll" size="20992">
+      <assemblyIdentity name="AForge.Video" version="2.2.5.0" publicKeyToken="CBFB6E07D173C401" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>uvpu0EyieCJwB0EnoEmN3gIsKp9Alsa7K448CLs9QE0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AForge.Video.DirectShow.dll" size="61440">
+      <assemblyIdentity name="AForge.Video.DirectShow" version="2.2.5.0" publicKeyToken="61EA4348D43881B7" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Zm1EeY2U6voe0hr3npvAKT/9lvhjq12H94vO6e+f/Ws=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Photomaton.exe" size="92088">
+      <assemblyIdentity name="Photomaton" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>fNte52yU7tOka1eLTc2wQGz3gF6vnkCA6I+kXpPRvRE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="icon.ico" size="80324">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Pyvv9KM48uO26lccPYEJ1jON7J5z+xYDHzpNwkUjr5Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Photomaton.exe.config" size="186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1NgAxCSw4ibTXzWVy7D6Rw60Qih4Dn37KvGhG5Ora/s=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=ATELIER\rondou" issuerKeyHash="793306b50dafc6864265b3a8818ebbdc7c6d1219" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>y0AqHknciVeynsVTzpEDRCHTKIHPGOqDhveH0ddKV8s=</DigestValue></Reference></SignedInfo><SignatureValue>T8AA+sYC0eUfS2GfZuBeG1w3Ajti/TPgW/48JIh1D9+xL5scDqhvTn42t5xQKaVU2Z0Ww8K0Sud3u3tJB02WcmWfcz0TQ88qWpUXSk88+qvrf2eX3eHyR43RPtI4gpPtDHgKIuveIQeCsGkU2zTm7PKp9D2Ry+ySvtKzKPYlFdw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>sUfCu516PC5owctiqBf1D76i+DzEbiNUL3OR69jhqqobVu7Pf14IGqidU1u4R/4t7F45NGhLk6Sl8A73u09Ncu9r9WPzkFhLbwCo1mvDcLEC9B7PWw1q0CBIW1LNUxhoSZL01nGq1YJqRz4R83fwq26HjBXB8Dgn5g7dnr8nfXk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="cb574ad7d187f78683ea18cf8128d321440391ce53c59eb25789dc491e2a40cb" Description="" Url=""><as:assemblyIdentity name="Photomaton.exe" version="1.0.0.2" publicKeyToken="05a81b33d57a2617" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ATELIER\rondou</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>Tef79yHOZX6oLXRq+xTQlbS+G644NHOoUWrAyDLqzRc=</DigestValue></Reference></SignedInfo><SignatureValue>XBpN32/Hne9Djfdx/DPpJ10MlZZlSNPg9TaPyhfVyte7sIHqMtbhwlO90vt8/J6w9nyp6lknBGVr218i5OT4ZbsE2qWlKO4ri1LUdds5w1ctqpaC/AdIOVFC7e+pgpkFbPoaWU9lY15bY3kve8FvFWQwO1fTRUtwY0ElDg4rIk4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sUfCu516PC5owctiqBf1D76i+DzEbiNUL3OR69jhqqobVu7Pf14IGqidU1u4R/4t7F45NGhLk6Sl8A73u09Ncu9r9WPzkFhLbwCo1mvDcLEC9B7PWw1q0CBIW1LNUxhoSZL01nGq1YJqRz4R83fwq26HjBXB8Dgn5g7dnr8nfXk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQGizsZC4iDoFGexnEFIjndTANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwAQQBUAEUATABJAEUAUgBcAHIAbwBuAGQAbwB1MB4XDTIzMTIyMTEyNDQzNVoXDTI0MTIyMDE4NDQzNVowJzElMCMGA1UEAx4cAEEAVABFAEwASQBFAFIAXAByAG8AbgBkAG8AdTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAsUfCu516PC5owctiqBf1D76i+DzEbiNUL3OR69jhqqobVu7Pf14IGqidU1u4R/4t7F45NGhLk6Sl8A73u09Ncu9r9WPzkFhLbwCo1mvDcLEC9B7PWw1q0CBIW1LNUxhoSZL01nGq1YJqRz4R83fwq26HjBXB8Dgn5g7dnr8nfXkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQAQCovLuZ8z683jQn3ca9cbGetcfj0sNkZCmQnvM4X9JBaCpnlMIAKY6jEnpLVm6rhWNcDRvCCYvYXQ60CRd9pLoPf3Zsbu802rrykJLkr1x+SCnFUwe3h9vLdo6m9F4utGWMZS04jTxW5jAB6PyuBneyskHq93nA0bwcBKQMrAuw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
